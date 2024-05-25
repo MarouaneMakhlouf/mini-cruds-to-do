@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+        integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="w-screen min-h-screen flex flex-col justify-start items-center pt-3 bg-cyan-200">
+        <div class="w-4/5 h-fit">
+            <input placeholder="Search" class="w-full p-4 border outline-none h-10 rounded-3xl" type="search"
+                name="search" id="search">
+        </div>
+        <div class="w-4/5 my-3 border-blue-950 flex flex-col gap-y-3">
+            <h2 class="font-bold text-xl px-2">Add A Task</h2>
+            <input placeholder="task" class="w-full h-10 p-4 rounded-3xl border" type="text" name="addTask"
+                id="addTask">
+            <input id="su" onclick="addTask()"
+                class="px-4 py-2 border border-transparent rounded-2xl bg-orange-500 text-white font-semibold "
+                type="submit" value="Submit">
+            <input id="up" onclick="updateTask()"
+                class="px-4 hidden py-2 border border-transparent rounded-2xl bg-lime-500 text-white font-semibold "
+                type="submit" value="Update">
+        </div>
+        <div class="w-4/5 border flex flex-col gap-y-2" id="output">
+
+
+        </div>
+    </div>
+
+    <script src="../src/main.js"></script>
+</body>
+
+</html>
